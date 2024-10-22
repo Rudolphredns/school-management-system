@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>School Management System</h1>
+
+    <div class="grid-container">
+        <div id="teacherListDisplay" class="form-item">
+            <h2>Teachers</h2>
+            <ul id="teacherList"></ul> <!-- แสดงรายชื่อครูและจำนวนครูทั้งหมด -->
+        </div>
+
+        <div id="studentListDisplay" class="form-item">
+            <h2>Students</h2>
+            <ul id="studentList"></ul> <!-- แสดงรายชื่อนักเรียนและจำนวนนักเรียนทั้งหมด -->
+        </div>
+        <div></div>
+        <form id="teacherForm" class="form-item">
+            <h2>Add Teacher</h2>
+            <input type="text" id="teacherName" placeholder="Teacher Name" required>
+            <input type="number" id="teacherAge" placeholder="Teacher Age" required>
+            <input type="text" id="teacherSubject" placeholder="Subject" required>
+            <button type="submit">Add Teacher</button>
+        </form>
+
+        <form id="studentForm" class="form-item">
+            <h2>Add Student</h2>
+            <input type="text" id="studentName" placeholder="Student Name" required>
+            <input type="number" id="studentAge" placeholder="Student Age" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        
+
+        <form id="assignGradeForm" class="form-item">
+            <h2>Assign Grade</h2>
+            <select id="teacherSelect" required>
+                <option value="">Select Teacher</option>
+            </select>
+            <select id="studentSelect" required>
+                <option value="">Select Student</option>
+            </select>
+            <input type="number" id="grade" placeholder="Grade" required>
+            <button type="submit">Assign Grade</button>
+        </form>
+
+        <div id="assignmentResults" class="form-item">
+            <h2>Grade Assignments</h2>
+            <ul id="assignmentList"></ul> <!-- แสดงผลการให้เกรดของครูต่อแต่ละนักเรียน -->
+        </div>
+
+        <div id="topStudentsDisplay" class="form-item">
+            <h2>Top Students</h2>
+            <ul id="topStudentsList"></ul> <!-- แสดงรายชื่อนักเรียนที่ได้คะแนนสูงสุด -->
+        </div>
+
+        <div id="averageGradeDisplay" class="form-item">
+            <h3>Average Grade:</h3>
+            <p id="averageGrade">-</p> <!-- แสดงค่าเฉลี่ยเกรดทั้งหมดของนักเรียน -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js" defer></script>
+</body>
+</html>

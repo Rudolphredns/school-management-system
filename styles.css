@@ -1,0 +1,70 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* การจัดหัวข้อ */
+h1 {
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+/* การจัดการ Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* การจัดการฟอร์มและกล่องข้อมูล */
+.form-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+}
+
+button {
+    background-color: #004d99;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* การจัดการส่วนแสดงผล */
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    background-color: #e6f2ff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
